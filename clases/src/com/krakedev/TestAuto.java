@@ -5,14 +5,15 @@ public class TestAuto {
 	public static void main(String[] args) {
 		Auto auto1=new Auto();
 		Auto auto2=new Auto();
-		auto1.marca ="Chevrolet";
-		auto1.anio = 2020;
-		auto1.precio =45000.78;
-		System.out.println("Marca: "+auto1.marca+" Anio: "+auto1.anio+" Precio: "+auto1.precio);
-		auto2.marca="Aveo";
-		auto2.anio=2015;
-		auto2.precio=5000.00;
-		System.out.println("Marca: "+auto2.marca+" Anio: "+auto2.anio+" Precio: "+auto2.precio);
+		auto1.setMarca("Chevrolet");
+		auto1.setAnio(2020);
+		auto1.setPrecio(45000.78);
+		
+		System.out.println("Marca: "+auto1.getMarca()+" Anio: "+auto1.getAnio()+" Precio: "+auto1.getPrecio());
+		auto2.setMarca("Aveo");
+		auto2.setAnio(2015);
+		auto2.setPrecio(5000.00);
+		System.out.println("Marca: "+auto2.getMarca()+" Anio: "+auto2.getAnio()+" Precio: "+auto2.getPrecio());
 		
 	}
 
