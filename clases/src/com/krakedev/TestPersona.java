@@ -8,6 +8,13 @@ public class TestPersona {
         Persona p2=new Persona();
         //2. Instaciar un objeto Persona y referenciarlo con p
         p1=new Persona();
+        Persona p3=new Persona("Jose");
+        Persona p4=new Persona("Fransisco",34,1.58);
+        
+        System.out.println("hola mundo"+p3.getNombre());
+        System.out.println("nombre:"+p4.getNombre());
+        System.out.println("edad:"+p4.getEdad());
+        System.out.println("estatura:"+p4.getEstatura());
         //3. Modificar los atributos
         p1.setNombre("Juan");
         p1.setEdad(25);

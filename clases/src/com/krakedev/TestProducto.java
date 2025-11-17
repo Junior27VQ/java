@@ -6,6 +6,11 @@ public class TestProducto {
 		Producto productoA=new Producto();
 		Producto productoB=new Producto();
 		Producto productoC=new Producto();
+		Producto p1=new Producto("Jabon","Protex");
+		Producto p2=new Producto(25.35,100);
+		System.out.println("Producto1: "+p1.getNombre()+", "+p1.getDescripcion()+": $"+p1.getPrecio()+" - "+p1.getStockActual());
+		System.out.println("Producto2: "+p2.getNombre()+", "+p2.getDescripcion()+": $"+p2.getPrecio()+" - "+p2.getStockActual());
+		
 		productoA.setNombre("Crema Dental");
 		productoA.setDescripcion("Triple Accion");
 		productoA.setPrecio(2.99);
