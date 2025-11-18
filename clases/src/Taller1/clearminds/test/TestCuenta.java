@@ -29,7 +29,7 @@ public class TestCuenta {
 		cuenta1.imprimiConMiEstilo();
 		cuenta2.imprimiConMiEstilo();
 		cuenta3.imprimiConMiEstilo();
-		
+		System.out.println("-----Valores modificado: "+saldoModificado+" "+tipoModificado);
 		saldoModificado=cuenta4.setSaldo(10);
 		
 		System.out.println("-----Cuenta4------");
