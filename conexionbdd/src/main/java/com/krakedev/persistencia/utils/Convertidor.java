@@ -7,6 +7,8 @@ import java.util.Date;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.krakedev.persistencia.entidades.EstadoCivil;
+
 public class Convertidor {
 	private static final String FORMATO_FECHA="yyyy/MM/dd";
 	private static final String FORMATO_HORA="hh:mm";
@@ -37,6 +39,16 @@ public class Convertidor {
 			throw new Exception("La hora no tiene el formato correcto "+horaStr);
 		}
 		return horaDate;
+	}
+	public static EstadoCivil mapear(String codigo) {
+		if(codigo.equalsIgnoreCase("S")) {
+			return new EstadoCivil("S", "Soltero");
+		}else if(codigo.equalsIgnoreCase("C")) {
+			return new EstadoCivil("C", "Casado");
+		}else if(codigo.equalsIgnoreCase("U")) {
+			return new EstadoCivil("U", "Union libre");
+		}
+		return new EstadoCivil(codigo, "Desconicido");
 	}
 
 }
